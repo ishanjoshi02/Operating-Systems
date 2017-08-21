@@ -42,7 +42,7 @@ do
 		read pattern
 		temp="temp"
 		grep -v $pattern $fileName | cat >> $temp
-		cat > $fileName
+		rm $fileName
 		cat $temp | cat >> $fileName
 		rm $temp
 		;;
@@ -51,7 +51,7 @@ do
 		read pattern
 		temp="temp"
 		grep -v $pattern $fileName | cat >> $temp
-		cat > $fileName
+		rm $fileName
 		cat $temp | cat >> $fileName
 		rm $temp
 		echo "Enter Name"

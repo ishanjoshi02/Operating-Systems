@@ -1,3 +1,5 @@
+// Sorting using Bubble Sort
+
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -31,8 +33,10 @@ int main() {
   pid_t pid = fork();
   if (pid == 0)
     sortInc(array, size);
-  else
-    sortDec(array, size);
+  else {
+      wait(NULL);
+      sortDec(array, size);
+  }
   printf("Sorted Array:\n");
   for(i = 0;i < size;i++)
     printf("%d\t", *(array + i));
