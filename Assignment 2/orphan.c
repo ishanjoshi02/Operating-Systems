@@ -3,6 +3,7 @@
 #include <sys/types.h>
 
 int main() {
+    system("clear");
     pid_t pid = fork();
     if (pid == 0) {
       int i;
