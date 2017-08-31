@@ -1,6 +1,11 @@
 # OS
 Codes for my Operating Systems' Class
 
+## Sample Programs
+All Samle Programs like creating a Thread, that prints Hello World, are saved in a Folder called Sample Programs in their Respective Assignments. i.e. The above Program is saved in
+
+'Assignment 2/Sample Programs'
+
 ### unistd.h not Found Error
 Resolve this Error by installing g++ compiler
 
