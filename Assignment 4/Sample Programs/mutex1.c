@@ -1,5 +1,4 @@
-// Write a Program using Mutex and Pthread, where Thread_1 writes information into File and Thread_2 reads Information from
-// that File
+// Write a Program using Mutex and Pthread, where Thread_1 writes information into File and Thread_2 reads Information from that File
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>

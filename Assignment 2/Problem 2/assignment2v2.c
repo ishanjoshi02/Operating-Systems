@@ -8,6 +8,7 @@ int main(int argc, char const *argv[]) {
   int i;
   pid_t pid;
   printf("Enter the Size of the Array\n");
+  scanf("%d", &size);
   array = (int *) malloc(sizeof(int) * size);
   printf("Enter the Elements of the Array\n");
   for (i = 0;i < size;i++) {
