@@ -52,4 +52,4 @@ Sample Shell Programs : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
 
 Writeups : [ Gauri Karekar ](https://github.com/gaurikarekar)
 
-Assignment 6 : Suraj Kulkarni
+Assignment 6 : [ Suraj Kulkarni ](https://github.com/surajkool)
