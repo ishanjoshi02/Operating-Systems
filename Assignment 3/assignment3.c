@@ -10,10 +10,10 @@ void log(char *message) {
   printf("%s\n", message);
 }
 int **allocateMemory(int rows, int cols) {
-  int **a = (int **) malloc(sizeof(int *) * rows);
+  int **a = (int **) malloc(BUFFER_SIZEof(int *) * rows);
   int i;
   for (i = 0;i < cols;i++)
-    *(a + i) = (int *) malloc(sizeof(int) * cols);
+    *(a + i) = (int *) malloc(BUFFER_SIZEof(int) * cols);
   return a;
 }
 int **accept(int rows, int cols) {
@@ -58,10 +58,10 @@ int main() {
   b = accept(rows, cols);
   c = allocateMemory(rows, cols);
   numberOfThreads = 0;
-  mThreads = (pthread_t *) malloc(sizeof(pthread_t) * (rows * cols));
+  mThreads = (pthread_t *) malloc(BUFFER_SIZEof(pthread_t) * (rows * cols));
   for (i = 0;i < rows;i++) {
     for (j = 0;j < cols;j++) {
-      struct args *arguments = (struct args *) malloc(sizeof(struct args));
+      struct args *arguments = (struct args *) malloc(BUFFER_SIZEof(struct args));
       (* arguments).rows = rows;
       (* arguments).cols = cols;
       (* arguments).a = a;
