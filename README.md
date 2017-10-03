@@ -1,7 +1,9 @@
 # OS
 Codes for my Operating Systems' Class
 
-### Assignments
+## Assignments
+
+Complete OS Assignment Aims are included in Assignments.md
 
 Assignment 1 : Shell Programming
 
@@ -47,4 +49,5 @@ This is done to explicitly tell gcc to include pthread Library during compilatio
 ## Credits
 
 Sample Shell Programs : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
+
 Writeups : [ Gauri Karekar ](https://github.com/gaurikarekar)
