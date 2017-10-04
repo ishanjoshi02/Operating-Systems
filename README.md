@@ -50,7 +50,7 @@ This is done to explicitly tell gcc to include pthread Library during compilatio
 
 Sample Shell Programs (Assignment 1) : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
 
-Assignment 2 : [ Abhijeet Nawale ](https://github.com/Abhinawale) 
+Assignment 2, 3, 9 (Bug Fixes) : [ Abhijeet Nawale ](https://github.com/Abhinawale) 
 
 Assignment 6 : [ Suraj Kulkarni ](https://github.com/surajkool)
 
