@@ -48,10 +48,12 @@ This is done to explicitly tell gcc to include pthread Library during compilatio
 
 ## Credits
 
-Sample Shell Programs : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
+Sample Shell Programs (Assignment 1) : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
 
-Writeups : [ Gauri Karekar ](https://github.com/gaurikarekar)
+Assignment 2 : [ Abhijeet Nawale ](https://github.com/Abhinawale) 
 
 Assignment 6 : [ Suraj Kulkarni ](https://github.com/surajkool)
 
 Assignment 10 : [ Chinmay Bhate ](https://github.com/chinmay13)
+
+Writeups : [ Gauri Karekar ](https://github.com/gaurikarekar)
