@@ -1,66 +1,54 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <pthread.h>
-#include <fcntl.h>
-#include <string.h>
-
-#define SIZE 1024
-
-int fdr, fdw;
-
-char input_buffer[SIZE];
-char output_buffer[SIZE];
-
-pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
-
-void *reader(void *arg) {
-
-  int ret_val;
-  int n;
-  pthread_mutex_lock(&mutex);
-
-  fdr = open("file.txt", O_RDONLY);
-
-  while (n = read(fdr, output_buffer, SIZE) > 0) {
-
-    printf("Reader: %s\n", output_buffer);
-
-  }
-
-  printf("\n");
-  close(fdr);
-  pthread_mutex_unlock(&mutex);
-  system("rm -f file.txt");
-
+#include<stdio.h>
+#include<pthread.h>
+#include<semaphore.h>
+void* reader(void*);
+void* writer(void*);
+int getItemforBuff();
+void readItemfromBuff(int buffer);
+int buff;
+sem_t s;
+int flag=0;
+int main()
+{
+    pthread_t rd_tid;
+    pthread_t wr_tid;
+    sem_init(&s,0,1);
+    pthread_create(&wr_tid,NULL,writer,NULL);
+    pthread_create(&rd_tid,NULL,reader,NULL);
+    pthread_join(wr_tid,NULL);
+    pthread_join(rd_tid,NULL);
+    return 0;
 }
-void *writer(void *arg) {
-
-  pthread_mutex_lock(&mutex);
-
-  fdw = open("file.txt", O_CREAT | O_WRONLY);
-  printf("Writer:\n");
-  gets(input_buffer);
-  write(fdw, input_buffer, strlen(input_buffer));
-  close(fdw);
-
-  pthread_mutex_unlock(&mutex);
-
+void* reader(void *argp)
+{
+    while(1){
+        sem_wait(&s);
+        if(flag==1){
+            readItemfromBuff(buff);
+            flag=0;
+        }
+        sem_post(&s);
+    }
 }
-
-int main(int argc, char const *argv[]) {
-
-  pthread_t rd_tid;
-  pthread_t wr_tid;
-
-  while (1) {
-
-    pthread_create(&wr_tid, NULL, writer, NULL);
-    pthread_create(&rd_tid, NULL, reader, NULL);
-
-    pthread_join(wr_tid, NULL);
-    pthread_join(rd_tid, NULL);
-
-  }
-
-  return 0;
+void* writer(void* argp)
+{
+    while(1){
+        sem_wait(&s);
+        if(flag==0){
+            buff=getItemforBuff();
+            flag=1;
+        }
+        sem_post(&s);
+    }
+}
+int getItemforBuff()
+{
+    int item;
+    printf("writer:ENTER AN ITEM INTO BUFFER\n");
+    scanf("%d",&item);
+    return item;
+}
+void readItemfromBuff(int buffer)
+{
+    printf("reader:READ ITEM FROM BUFFER=%d\n",buffer);
 }
