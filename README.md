@@ -48,9 +48,9 @@ This is done to explicitly tell gcc to include pthread Library during compilatio
 
 ## Credits
 
-Sample Shell Programs (Assignment 1) : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
+Assignment 2 and Bug Fixes: [ Abhijeet Nawale ](https://github.com/Abhinawale) 
 
-Assignment 2, 3, 9 (Bug Fixes) : [ Abhijeet Nawale ](https://github.com/Abhinawale) 
+Sample Shell Programs (Assignment 1) : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
 
 Assignment 6 : [ Suraj Kulkarni ](https://github.com/surajkool)
 
