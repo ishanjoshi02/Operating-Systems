@@ -26,7 +26,7 @@ key_t getKey() {
 
 int shm_init() {
 
-  return shmget(getKey(), BUFFER_SIZEof(SharedMemory), IPC_CREAT | 0666);
+  return shmget(getKey(), sizeof(SharedMemory), IPC_CREAT | 0666);
 
 }
 
