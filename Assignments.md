@@ -47,14 +47,17 @@ number of characters, number of words and number of lines in accepted sentences,
 output in a text file and writes the contents of the file on second pipe to be read by first process
 and displays on standard output.
 
-## Assignment No. 8: Inter-process Communication using Shared Memory using System V. Application to
+## Assignment No. 8:
+Inter-process Communication using Shared Memory using System V. Application to
 demonstrate: Client and Server Programs in which server process creates a shared memory segment and
 writes the message to the shared memory segment. Client process reads the message from the shared
 memory segment and displays it to the screen.
 
-## Assignment No. 9: Implement an assignment using File Handling System Calls (Low level system calls like
+## Assignment No. 9:
+Implement an assignment using File Handling System Calls (Low level system calls like
 open, read, write, etc).
 
-## Assignment No. 10: Implement a new system call in the kernel space, add this new system call in the Linux
+## Assignment No. 10:
+Implement a new system call in the kernel space, add this new system call in the Linux
 kernel by the compilation of this kernel (any kernel source, any architecture and any Linux kernel
 distribution) and demonstrate the use of this embedded system call using C program in user space.
