@@ -1,8 +1,3 @@
-/*
-Name-Ashish Gaurav
-Roll-3154029
-Batch-A2
-*/
 #include<stdio.h>
 int bs(int [30],int ,int ,int ,int);
 int bs(int a[30],int n,int key,int high,int low)

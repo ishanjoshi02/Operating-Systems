@@ -1,8 +1,3 @@
-/*
-Name-Ashish Gaurav
-Roll-3154029
-Batch-A2
-*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
