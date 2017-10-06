@@ -25,6 +25,8 @@ Assignment 9 : File Handling System Calls
 
 Assignment 10 : Kernel Compilation
 
+## Final Codes only
+Write these files into your disc
 
 ## Sample Programs
 Sample Programs are simple programs used to demonstrate concepts used in the final assignment.
@@ -49,6 +51,8 @@ This is done to explicitly tell gcc to include pthread Library during compilatio
 ## Credits
 
 Assignment 2 and Bug Fixes: [ Abhijeet Nawale ](https://github.com/Abhinawale) 
+
+Assignment 2 (Binary Search) : Ashish Gaurav
 
 Sample Shell Programs (Assignment 1) : [ Neeraj Lagwankar ](https://github.com/FlashBlaze)
 
