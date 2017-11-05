@@ -54,7 +54,7 @@ This is done to explicitly tell gcc to include pthread Library during compilatio
 
 ## Credits
 
-Assignment 1 and Bug Fixes : [ Sujay Mahadik ] (https://github.com/sujaym23)
+Assignment 1 and Bug Fixes : [ Sujay Mahadik ](https://github.com/sujaym23)
 
 Assignment 2 and Bug Fixes: [ Abhijeet Nawale ](https://github.com/Abhinawale) 
 
