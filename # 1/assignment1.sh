@@ -23,7 +23,7 @@ do
 			read number
 			echo "Enter Address of $name"
 			read address
-			echo -e "$name\t$number\t\t$address" | cat >> $fileName
+			echo -e "$name\t$number\t$address\n" | cat >> $fileName
 			echo "Enter 0 to Stop, 1 to Enter next"
 			read cont
 		done

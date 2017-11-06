@@ -28,7 +28,7 @@ Assignment 10 : Kernel Compilation
 
 ## Final Codes only
 
-Write these files into your disc
+Write these files into your disc. Warning: These Program are correct but may not contain all the changes.
 
 ## Sample Programs
 
