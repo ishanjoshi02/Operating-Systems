@@ -36,7 +36,8 @@ int main(int argc, char *argv[]) {
         // Reading pointer to the file stored in the Buffer and assign it to fp
         read(pipefd[0], filePath, sizeof(filePath));
 
-        char readBuffer[100];
+        char readBuffer[1000];
+        int i = 0;
 
         // Opening the File to write on it
         if ((fp = fopen(filePath, "r")) == NULL) {
@@ -46,8 +47,10 @@ int main(int argc, char *argv[]) {
 
         }
 
-        fscanf(fp, "%s", readBuffer);
-        // fread(readBuffer, sizeof(readBuffer), sizeof(readBuffer), fp);
+        while (!feof(fp)) {
+            readBuffer[i++] = fgetc(fp);
+        }
+        
         fclose(fp);
 
         // Now writing Contents of File to Write Buffer of second pipe
