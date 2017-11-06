@@ -20,8 +20,8 @@ void main()
 	o.lines=1;
 	FILE *fp;
 	char buff[max];
-	char *f1="/home/c05l0925/fifo";
-	char *f2="/home/c05l0925/fifo1";
+	char *f1="fifo";
+	char *f2="fifo1";
 	mkfifo(f1,0666);
 	mkfifo(f2,0666);
 	fd=open(f1,O_RDONLY);
@@ -46,9 +46,6 @@ void main()
 		}
 		
 	}
-	fp=fopen("PROCESS.txt","w");
-	fwrite(&o,sizeof(o),1,fp);
-	fread(&o,sizeof(o),1,fp);
 	close(fd);
 	fd1=open(f2,O_WRONLY);
 	write(fd1,&o,sizeof(o));

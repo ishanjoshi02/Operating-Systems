@@ -20,8 +20,8 @@ void main()
 	o.lines=1;
 	FILE *fp;
 	char buff[max];
-	char *f1="/home/c05l0925/fifo";
-	char *f2="/home/c05l0925/fifo1";
+	char *f1="fifo";
+	char *f2="fifo1";
 	mkfifo(f1,0666);
 	mkfifo(f2,0666);
 	fd=open(f1,O_RDONLY);
